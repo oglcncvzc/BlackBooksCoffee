@@ -256,8 +256,8 @@ export const CAFE_INFO = {
   nadirKitap: 'https://www.nadirkitap.com/kitapara.php?ara=aramayap&satici=2035979&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRzdgUGwyBwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABpx0xtNYUJK3CQofo_wV0dn5v7iQy98wAiJTiwaWCwrCv1HYriypau7ya8w0w_aem_Xw9CuWLVd9PU6ymZxYF-0A',
   yandexMaps: 'https://yandex.com.tr/maps/org/black_books_coffee/172021976894/',
   wifi: {
-    name: 'BlackBooks_Guest',
-    pass: 'blackbooksmoda',
+    name: 'Black Books Misafir',
+    pass: 'Bandini24',
   },
   founders: 'Burak',
   address: 'Caferağa Mah. Moda, Kadıköy / İstanbul',
