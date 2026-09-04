@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'BLACK BOOKS & COFFEE • QR Menü',
-    description: 'Moda’nın kalbinde; nadir kitaplar, edebiyat sohbetleri ve özenle hazırlanan artisanal kahveler.',
+    description: 'Moda’nın kalbinde; nadir ve yepyeni kitaplar, edebiyat sohbetleri, kitap kulüpleri ve özenle hazırlanan kahvelerle sıcacık bir kitabevi deneyimi.',
     images: ['/images/logo.jpeg'],
   },
 };

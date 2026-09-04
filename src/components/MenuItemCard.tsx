@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { MenuItem } from '@/data/menu';
 import { Plus, Check, Sparkles } from 'lucide-react';
 
@@ -31,95 +32,98 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #191612 0%, #13100c 100%)',
+      background: 'linear-gradient(135deg, #181511 0%, #120f0c 100%)',
       border: '1px solid rgba(212, 175, 122, 0.16)',
       borderRadius: 'var(--radius-md)',
-      padding: '16px 18px',
+      padding: '14px 16px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      gap: '12px',
+      gap: '10px',
       boxShadow: '0 4px 16px rgba(0, 0, 0, 0.4)',
       transition: 'border-color 0.2s ease, transform 0.2s ease',
       position: 'relative',
     }}>
-      {/* Top Header & Badges */}
-      <div>
-        <div style={{
-          display: 'flex',
-          alignItems: 'flex-start',
-          justifyContent: 'space-between',
-          gap: '8px',
-          marginBottom: '4px',
-        }}>
-          <div>
+      {/* Top Details & Optional Subtle Thumbnail */}
+      <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'baseline',
+            gap: '8px',
+            marginBottom: '4px',
+            flexWrap: 'wrap',
+          }}>
             <h3 style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: '20px',
+              fontSize: '19px',
               fontWeight: 700,
               color: '#ffffff',
               lineHeight: 1.25,
             }}>
               {item.name}
             </h3>
+
             {item.notes && (
               <span style={{
                 fontSize: '11px',
                 color: 'var(--accent-gold)',
                 fontWeight: 500,
                 fontStyle: 'italic',
-                display: 'inline-block',
-                marginTop: '2px',
               }}>
                 {item.notes}
               </span>
             )}
-          </div>
 
-          <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
-            {item.isSpecialty && (
-              <span style={{
-                fontSize: '10px',
-                padding: '2px 8px',
-                borderRadius: 'var(--radius-full)',
-                background: 'rgba(223, 168, 75, 0.15)',
-                color: 'var(--accent-gold-light)',
-                fontWeight: 700,
-                border: '1px solid rgba(223, 168, 75, 0.3)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '3px',
-              }}>
-                <Sparkles size={10} />
-                ÖZEL
-              </span>
-            )}
             {item.isPopular && (
               <span style={{
                 fontSize: '10px',
-                padding: '2px 8px',
-                borderRadius: 'var(--radius-full)',
-                background: 'rgba(166, 106, 56, 0.2)',
-                color: 'var(--accent-wood-light)',
+                padding: '1px 6px',
+                borderRadius: '4px',
+                background: 'rgba(223, 168, 75, 0.15)',
+                color: 'var(--accent-gold)',
                 fontWeight: 600,
-                border: '1px solid rgba(166, 106, 56, 0.35)',
+                border: '1px solid rgba(223, 168, 75, 0.25)',
               }}>
                 Popüler
               </span>
             )}
           </div>
+
+          {/* Description */}
+          {item.description && (
+            <p style={{
+              fontSize: '12.5px',
+              color: 'var(--text-muted)',
+              lineHeight: 1.35,
+              marginTop: '2px',
+            }}>
+              {item.description}
+            </p>
+          )}
         </div>
 
-        {/* Description */}
-        {item.description && (
-          <p style={{
-            fontSize: '13px',
-            color: 'var(--text-muted)',
-            lineHeight: 1.4,
-            marginTop: '4px',
+        {/* Elegant, Non-exaggerated Thumbnail Image */}
+        {item.image && (
+          <div style={{
+            width: '64px',
+            height: '64px',
+            borderRadius: '10px',
+            overflow: 'hidden',
+            border: '1px solid rgba(212, 175, 122, 0.25)',
+            background: '#0a0908',
+            flexShrink: 0,
+            position: 'relative',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.5)',
           }}>
-            {item.description}
-          </p>
+            <Image
+              src={item.image}
+              alt={item.name}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="64px"
+            />
+          </div>
         )}
       </div>
 
@@ -129,7 +133,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
           display: 'flex',
           gap: '6px',
           background: 'rgba(11, 10, 8, 0.6)',
-          padding: '4px',
+          padding: '3px',
           borderRadius: 'var(--radius-sm)',
           border: '1px solid rgba(212, 175, 122, 0.12)',
         }}>
@@ -141,9 +145,9 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
                 onClick={() => setSelectedVariant(v)}
                 style={{
                   flex: 1,
-                  padding: '6px 8px',
+                  padding: '5px 8px',
                   borderRadius: '6px',
-                  fontSize: '12px',
+                  fontSize: '11.5px',
                   fontWeight: isSelected ? 600 : 400,
                   cursor: 'pointer',
                   transition: 'all 0.2s ease',
@@ -163,22 +167,22 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
         </div>
       )}
 
-      {/* Bottom Price and Add Action */}
+      {/* Bottom Price & Add Button */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingTop: '8px',
+        paddingTop: '6px',
         borderTop: '1px solid rgba(212, 175, 122, 0.1)',
       }}>
         <div style={{
-          fontSize: '22px',
+          fontSize: '20px',
           fontWeight: 700,
           fontFamily: 'var(--font-sans)',
           color: 'var(--accent-gold-light)',
           lineHeight: 1,
         }}>
-          {currentPrice} <span style={{ fontSize: '15px' }}>₺</span>
+          {currentPrice} <span style={{ fontSize: '14px' }}>₺</span>
         </div>
 
         <button
@@ -187,7 +191,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            padding: '7px 14px',
+            padding: '6px 14px',
             borderRadius: 'var(--radius-full)',
             background: justAdded
               ? '#2e5c38'
@@ -205,12 +209,12 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
         >
           {justAdded ? (
             <>
-              <Check size={14} color="#4ade80" />
+              <Check size={13} color="#4ade80" />
               <span>Eklendi</span>
             </>
           ) : (
             <>
-              <Plus size={14} color="var(--accent-gold)" />
+              <Plus size={13} color="var(--accent-gold)" />
               <span>{orderCount > 0 ? `Ekle (${orderCount})` : 'Ekle'}</span>
             </>
           )}
