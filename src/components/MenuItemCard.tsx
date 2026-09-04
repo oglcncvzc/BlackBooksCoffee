@@ -210,12 +210,12 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({
           {justAdded ? (
             <>
               <Check size={13} color="#4ade80" />
-              <span>Eklendi</span>
+              <span>Listeye Eklendi</span>
             </>
           ) : (
             <>
               <Plus size={13} color="var(--accent-gold)" />
-              <span>{orderCount > 0 ? `Ekle (${orderCount})` : 'Ekle'}</span>
+              <span>{orderCount > 0 ? `Sipariş Listesine Ekle (${orderCount})` : 'Sipariş Listesine Ekle'}</span>
             </>
           )}
         </button>

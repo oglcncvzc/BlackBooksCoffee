@@ -8,7 +8,7 @@ export interface MenuItem {
   variants?: { label: string; price: number }[];
   isPopular?: boolean;
   isSpecialty?: boolean;
-  image?: string;
+  image: string;
 }
 
 export interface Category {
@@ -76,7 +76,7 @@ export const MENU_ITEMS: MenuItem[] = [
       { label: 'Double', price: 200 },
     ],
     isPopular: true,
-    image: '/images/espresso.jpg',
+    image: '/images/items/espresso.jpg',
   },
   {
     id: 'ristretto',
@@ -84,6 +84,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'kahveler',
     description: 'Kısa ve yoğun ekstraksiyon espresso.',
     price: 100,
+    image: '/images/items/ristretto.jpg',
   },
   {
     id: 'espresso-lungo',
@@ -91,6 +92,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'kahveler',
     description: 'Daha uzun çekim, yumuşak içimli espresso.',
     price: 150,
+    image: '/images/items/espresso-lungo.jpg',
   },
   {
     id: 'americano',
@@ -99,6 +101,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Sıcak su ile inceltilmiş taze espresso.',
     price: 200,
     isPopular: true,
+    image: '/images/items/americano.jpg',
   },
   {
     id: 'caffe-crema',
@@ -106,6 +109,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'kahveler',
     description: 'Yumuşak içimli kremalı kahve.',
     price: 200,
+    image: '/images/items/caffe-crema.jpg',
   },
   {
     id: 'cappuccino',
@@ -114,7 +118,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Taze espresso, sıcak süt ve kadifemsi süt köpüğü.',
     price: 250,
     isPopular: true,
-    image: '/images/latte.jpg',
+    image: '/images/items/cappuccino.jpg',
   },
   {
     id: 'caffe-latte',
@@ -123,7 +127,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Buharda ısıtılmış süt ve taze espresso.',
     price: 250,
     isPopular: true,
-    image: '/images/latte.jpg',
+    image: '/images/items/caffe-latte.jpg',
   },
   {
     id: 'latte-macchiato',
@@ -131,6 +135,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'kahveler',
     description: 'Katmanlı sıcak süt, süt köpüğü ve taze espresso.',
     price: 250,
+    image: '/images/items/latte-macchiato.jpg',
   },
   {
     id: 'flat-white',
@@ -138,6 +143,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'kahveler',
     description: 'Çift shot espresso ve ince mikro köpüklü süt.',
     price: 250,
+    image: '/images/items/flat-white.jpg',
   },
   {
     id: 'turk-kahvesi',
@@ -146,7 +152,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Bol köpüklü taze çekim Türk kahvesi. Su ile servis edilir.',
     price: 150,
     isPopular: true,
-    image: '/images/turkish-coffee.jpg',
+    image: '/images/items/turk-kahvesi.jpg',
   },
 
   // --- SOĞUK KAHVELER ---
@@ -157,6 +163,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Soğuk su ve buz ile taze double espresso.',
     price: 200,
     isPopular: true,
+    image: '/images/items/iced-americano.jpg',
   },
   {
     id: 'iced-latte',
@@ -165,7 +172,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Buzlu soğuk süt ve taze espresso.',
     price: 250,
     isPopular: true,
-    image: '/images/iced-latte.jpg',
+    image: '/images/items/iced-latte.jpg',
   },
   {
     id: 'espresso-tonic',
@@ -173,6 +180,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'soguk-kahveler',
     description: 'Tonik, buz ve double shot espresso.',
     price: 250,
+    image: '/images/items/espresso-tonic.jpg',
   },
 
   // --- ÇAYLAR ---
@@ -188,7 +196,7 @@ export const MENU_ITEMS: MenuItem[] = [
       { label: 'Büyük (Kupa)', price: 75 },
     ],
     isPopular: true,
-    image: '/images/tea.jpg',
+    image: '/images/items/demleme-siyah-cay.jpg',
   },
   {
     id: 'yesil-cay',
@@ -196,6 +204,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'caylar',
     description: 'Taze demlenmiş yaprak yeşil çay.',
     price: 75,
+    image: '/images/items/yesil-cay.jpg',
   },
 
   // --- SOĞUK ÇAYLAR ---
@@ -206,7 +215,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Taze demlenmiş soğuk çay, serinletici çarkıfelek (passion fruit) ve şeftali lezzetiyle.',
     price: 100,
     isPopular: true,
-    image: '/images/iced-tea.jpg',
+    image: '/images/items/seftali-carkifelek.jpg',
   },
   {
     id: 'cilek-portakal',
@@ -215,7 +224,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Ferahlatıcı etkisiyle sıcak günler için çilekli ve portakallı soğuk demlenmiş meyve çayı.',
     price: 100,
     isPopular: true,
-    image: '/images/iced-tea.jpg',
+    image: '/images/items/cilek-portakal.jpg',
   },
 
   // --- SOĞUK İÇECEKLER ---
@@ -225,6 +234,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'soguk-icecekler',
     description: 'Doğal mineralli zengin kaynak maden suyu.',
     price: 75,
+    image: '/images/items/soda.jpg',
   },
   {
     id: 'su',
@@ -232,6 +242,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'soguk-icecekler',
     description: 'Soğuk doğal kaynak suyu.',
     price: 30,
+    image: '/images/items/su.jpg',
   },
 ];
 
