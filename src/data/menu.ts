@@ -114,6 +114,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Taze espresso, sıcak süt ve kadifemsi süt köpüğü.',
     price: 250,
     isPopular: true,
+    image: '/images/latte.jpg',
   },
   {
     id: 'caffe-latte',
@@ -122,6 +123,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Buharda ısıtılmış süt ve taze espresso.',
     price: 250,
     isPopular: true,
+    image: '/images/latte.jpg',
   },
   {
     id: 'latte-macchiato',
@@ -186,6 +188,7 @@ export const MENU_ITEMS: MenuItem[] = [
       { label: 'Büyük (Kupa)', price: 75 },
     ],
     isPopular: true,
+    image: '/images/tea.jpg',
   },
   {
     id: 'yesil-cay',
@@ -212,6 +215,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Ferahlatıcı etkisiyle sıcak günler için çilekli ve portakallı soğuk demlenmiş meyve çayı.',
     price: 100,
     isPopular: true,
+    image: '/images/iced-tea.jpg',
   },
 
   // --- SOĞUK İÇECEKLER ---
