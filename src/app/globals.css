@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0b0a08;
+  --bg-secondary: #14120f;
+  --bg-card: #1a1713;
+  --bg-card-hover: #221f19;
+  --bg-wood-dark: #2a1b11;
+  --bg-wood-accent: #3e2617;
+  
+  --border-subtle: rgba(212, 175, 122, 0.12);
+  --border-active: rgba(223, 168, 75, 0.4);
+  --border-wood: #4d3320;
+
+  --text-main: #fbf9f5;
+  --text-muted: #aba296;
+  --text-subtle: #797166;
+  
+  --accent-gold: #dfa84b;
+  --accent-gold-light: #f3c978;
+  --accent-gold-glow: rgba(223, 168, 75, 0.25);
+  --accent-wood: #a66a38;
+  --accent-wood-light: #c88c56;
+  --accent-paper: #ece3d4;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --shadow-warm: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(223, 168, 75, 0.05);
+  --shadow-wood: 0 8px 24px rgba(42, 27, 17, 0.6);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(166, 106, 56, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 100% 40%, rgba(223, 168, 75, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 0% 80%, rgba(92, 58, 33, 0.08) 0%, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-wood);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-wood);
+}
+
+/* Wood Grain Overlay Texture */
+.wood-texture-bg {
+  background-color: var(--bg-wood-dark);
+  background-image: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 50%, rgba(0,0,0,0.4) 100%);
+  border: 1px solid var(--border-wood);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px var(--accent-gold-glow);
+}
+
+/* Typography styles */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(14, 12, 10, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.glass-card {
+  background: rgba(26, 23, 19, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-card:hover {
+  border-color: var(--border-active);
+}
+
+/* Links & Buttons */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
