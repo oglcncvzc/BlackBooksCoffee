@@ -27,60 +27,60 @@
       overflow: hidden;
     }
     body {
-      padding: 7mm 9mm 6mm;
+      padding: 7mm 9.5mm 6mm;
       position: relative;
       display: flex;
       flex-direction: column;
-      justifyContent: space-between;
+      justify-content: space-between;
       height: 297mm;
     }
 
     /* Decorative Vintage Gold Borders */
     .outer-border {
       position: absolute;
-      top: 3mm;
-      left: 3mm;
-      right: 3mm;
-      bottom: 3mm;
+      top: 2.8mm;
+      left: 2.8mm;
+      right: 2.8mm;
+      bottom: 2.8mm;
       border: 1.5px solid #a66a38;
       pointer-events: none;
     }
     .inner-border {
       position: absolute;
-      top: 4.5mm;
-      left: 4.5mm;
-      right: 4.5mm;
-      bottom: 4.5mm;
-      border: 0.5px solid rgba(223, 168, 75, 0.5);
+      top: 4.2mm;
+      left: 4.2mm;
+      right: 4.2mm;
+      bottom: 4.2mm;
+      border: 0.6px solid rgba(223, 168, 75, 0.5);
       pointer-events: none;
     }
 
     /* Header */
     .header {
-      padding-bottom: 6px;
-      border-bottom: 1.2px solid rgba(212, 175, 122, 0.3);
+      padding-bottom: 8px;
+      border-bottom: 1.2px solid rgba(212, 175, 122, 0.35);
       position: relative;
       z-index: 10;
       display: flex;
       align-items: center;
-      justifyContent: space-between;
-      padding-left: 4px;
-      padding-right: 4px;
+      justify-content: space-between;
+      padding-left: 6px;
+      padding-right: 6px;
     }
     .header-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       text-align: left;
     }
     .logo-container {
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       border-radius: 10px;
       overflow: hidden;
       border: 1.5px solid #dfa84b;
       background: #000;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.8);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.8);
       flex-shrink: 0;
     }
     .logo-container img {
@@ -90,24 +90,24 @@
     }
     .title {
       font-family: 'Cinzel', serif;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 700;
       letter-spacing: 0.1em;
       color: #ffffff;
       line-height: 1.1;
     }
     .subtitle {
-      font-size: 10px;
+      font-size: 10.5px;
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #dfa84b;
-      margin-top: 2px;
+      margin-top: 2.5px;
     }
     .motto {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 13.5px;
+      font-size: 14.5px;
       color: #ece3d4;
       opacity: 0.95;
       text-align: right;
@@ -117,35 +117,44 @@
     .menu-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      gap: 22px;
       position: relative;
       z-index: 10;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       flex: 1;
     }
 
     .section-title {
       font-family: 'Cinzel', serif;
-      font-size: 12.5px;
+      font-size: 14px;
       font-weight: 700;
       letter-spacing: 0.08em;
       color: #dfa84b;
-      border-bottom: 1.2px solid rgba(223, 168, 75, 0.4);
-      padding-bottom: 2px;
-      margin-bottom: 4px;
+      border-bottom: 1.2px solid rgba(223, 168, 75, 0.45);
+      padding-bottom: 4px;
+      margin-bottom: 7px;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
     }
 
     .category-block {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .category-block:last-child {
+      margin-bottom: 0;
     }
 
-    /* Menu Item Row */
+    /* Menu Item Row (Spread Layout) */
     .menu-item {
-      margin-bottom: 3.2px;
+      margin-bottom: 7px;
+      background: rgba(26, 23, 19, 0.5);
+      border-radius: 5px;
+      padding: 3px 6px;
+    }
+    .menu-item:last-child {
+      margin-bottom: 0;
     }
     .item-header {
       display: flex;
@@ -154,7 +163,7 @@
     }
     .item-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 15.5px;
+      font-size: 18px;
       font-weight: 700;
       color: #ffffff;
       white-space: nowrap;
@@ -162,35 +171,32 @@
     .item-dots {
       flex: 1;
       border-bottom: 1px dotted rgba(212, 175, 122, 0.35);
-      margin: 0 5px;
-      position: relative;
-      top: -3px;
+      margin: 0 8px;
+      height: 1px;
     }
     .item-price {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 11.5px;
+      font-size: 14px;
       font-weight: 700;
       color: #f3c978;
       white-space: nowrap;
     }
     .item-desc {
-      font-size: 8.8px;
-      color: #aba296;
-      line-height: 1.15;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-top: 1px;
+      font-size: 10.5px;
+      color: #b8afa2;
+      line-height: 1.3;
+      margin-top: 2px;
+      padding-left: 2px;
     }
 
     /* =========================================
        EXPANDED ABOUT & FULL STORY SECTION
        ========================================= */
     .about-banner {
-      background: linear-gradient(135deg, rgba(42, 27, 17, 0.92) 0%, rgba(18, 12, 8, 0.98) 100%);
+      background: linear-gradient(135deg, rgba(42, 27, 17, 0.95) 0%, rgba(18, 12, 8, 0.98) 100%);
       border: 1.2px solid rgba(223, 168, 75, 0.45);
       border-radius: 7px;
-      padding: 7px 12px 6px;
+      padding: 10px 14px 9px;
       position: relative;
       z-index: 10;
       box-shadow: 0 4px 18px rgba(0,0,0,0.55);
@@ -198,26 +204,26 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 12px;
+      gap: 14px;
       align-items: start;
     }
     .about-col-title {
       font-family: 'Cinzel', serif;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: #dfa84b;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
       border-bottom: 1px solid rgba(212, 175, 122, 0.25);
-      padding-bottom: 2px;
+      padding-bottom: 2.5px;
     }
     .about-text {
-      font-size: 9.4px;
-      color: #e2d7c5;
-      line-height: 1.42;
-      margin-bottom: 3px;
+      font-size: 10.2px;
+      color: #e5dbca;
+      line-height: 1.5;
+      margin-bottom: 3.5px;
     }
     .about-text:last-child {
       margin-bottom: 0;
@@ -229,19 +235,19 @@
     .submission-box {
       background: #090705;
       border: 1px solid rgba(223, 168, 75, 0.5);
-      border-radius: 5px;
-      padding: 4px 8px;
+      border-radius: 6px;
+      padding: 5px 10px;
       text-align: center;
-      margin-top: 2px;
+      margin-top: 3px;
     }
     .email-line {
       font-family: monospace;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       color: #f3c978;
-      margin-top: 2px;
+      margin-top: 2.5px;
       background: rgba(223, 168, 75, 0.18);
-      padding: 2.5px 8px;
+      padding: 3px 10px;
       border-radius: 4px;
       display: inline-block;
     }
@@ -249,22 +255,22 @@
       text-align: center;
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 12.5px;
+      font-size: 13.5px;
       color: #ece3d4;
-      margin-top: 4px;
+      margin-top: 5px;
       border-top: 1px solid rgba(212, 175, 122, 0.2);
-      padding-top: 3px;
+      padding-top: 3.5px;
     }
 
     /* Centered Footer */
     .footer {
       border-top: 1.2px solid rgba(212, 175, 122, 0.25);
-      padding-top: 5px;
+      padding-top: 6px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justifyContent: center;
-      gap: 3px;
+      gap: 3.5px;
       text-align: center;
       position: relative;
       z-index: 10;
@@ -272,15 +278,15 @@
     .wifi-badge {
       background: rgba(223, 168, 75, 0.15);
       border: 1px solid rgba(223, 168, 75, 0.45);
-      padding: 3px 22px;
+      padding: 3.5px 24px;
       border-radius: 14px;
-      font-size: 10.5px;
+      font-size: 11px;
       font-weight: 600;
       color: #f3c978;
       display: inline-flex;
       align-items: center;
       justifyContent: center;
-      gap: 5px;
+      gap: 6px;
     }
     .location-info {
       font-size: 9.5px;
@@ -315,7 +321,7 @@
     </div>
   </div>
 
-  <!-- Menu Grid (19 Menu Items) -->
+  <!-- Menu Grid (19 Menu Items - Generously Spread & Symmetrical) -->
   <div class="menu-grid">
     
     <!-- LEFT COLUMN: SICAK KAHVELER (10 Items) -->
@@ -415,9 +421,9 @@
       </div>
     </div>
 
-    <!-- RIGHT COLUMN: SOĞUK KAHVELER, ÇAYLAR, SOĞUK ÇAYLAR, SOĞUK İÇECEKLER (9 Items) -->
+    <!-- RIGHT COLUMN: SOĞUK KAHVELER, ÇAYLAR, SOĞUK ÇAYLAR, SOĞUK İÇECEKLER -->
     <div>
-      <!-- SOĞUK KAHVELER -->
+      <!-- SOĞUK KAHVELER (3 Items) -->
       <div class="category-block">
         <div class="section-title">🧊 SOĞUK KAHVELER</div>
 
@@ -449,7 +455,7 @@
         </div>
       </div>
 
-      <!-- ÇAYLAR -->
+      <!-- ÇAYLAR (2 Items) -->
       <div class="category-block">
         <div class="section-title">🫖 SICAK ÇAYLAR</div>
 
@@ -472,52 +478,49 @@
         </div>
       </div>
 
-      <!-- SOĞUK ÇAYLAR & SOĞUK İÇECEKLER (YAN YANA) -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-        <!-- SOĞUK ÇAYLAR -->
-        <div class="category-block" style="margin-bottom: 0;">
-          <div class="section-title">🍑 SOĞUK ÇAYLAR</div>
+      <!-- SOĞUK ÇAYLAR (2 Items) -->
+      <div class="category-block">
+        <div class="section-title">🍑 SOĞUK ÇAYLAR</div>
 
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name" style="font-size: 14px;">Şeftali &amp; Çarkıf.</span>
-              <span class="item-dots"></span>
-              <span class="item-price">100₺</span>
-            </div>
-            <div class="item-desc">Soğuk meyve çayı.</div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Şeftali &amp; Çarkıfelek</span>
+            <span class="item-dots"></span>
+            <span class="item-price">100₺</span>
           </div>
-
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name" style="font-size: 14px;">Çilek &amp; Portakal</span>
-              <span class="item-dots"></span>
-              <span class="item-price">100₺</span>
-            </div>
-            <div class="item-desc">Soğuk aromatik çay.</div>
-          </div>
+          <div class="item-desc">Ferahlatıcı soğuk meyve harmanı çay.</div>
         </div>
 
-        <!-- SOĞUK İÇECEKLER -->
-        <div class="category-block" style="margin-bottom: 0;">
-          <div class="section-title">💧 SOĞUK İÇECEKLER</div>
-
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Soda (Maden Suyu)</span>
-              <span class="item-dots"></span>
-              <span class="item-price">75₺</span>
-            </div>
-            <div class="item-desc">Zengin mineralli soda.</div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Çilek &amp; Portakal</span>
+            <span class="item-dots"></span>
+            <span class="item-price">100₺</span>
           </div>
+          <div class="item-desc">Taze meyve aromalı soğuk çay.</div>
+        </div>
+      </div>
 
-          <div class="menu-item">
-            <div class="item-header">
-              <span class="item-name">Doğal Kaynak Suyu</span>
-              <span class="item-dots"></span>
-              <span class="item-price">30₺</span>
-            </div>
-            <div class="item-desc">Soğuk kaynak suyu.</div>
+      <!-- SOĞUK İÇECEKLER (2 Items) -->
+      <div class="category-block">
+        <div class="section-title">💧 SOĞUK İÇECEKLER</div>
+
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Soda (Maden Suyu)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">75₺</span>
           </div>
+          <div class="item-desc">Zengin mineralli doğal maden sodası.</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Doğal Kaynak Suyu</span>
+            <span class="item-dots"></span>
+            <span class="item-price">30₺</span>
+          </div>
+          <div class="item-desc">Cam şişe soğuk kaynak suyu.</div>
         </div>
       </div>
 
@@ -537,11 +540,11 @@
           <strong>Black Books &amp; Coffee</strong>, iki editör ve yazar, <strong style="color:#dfa84b;">Burak Albayrak</strong> ve <strong style="color:#dfa84b;">Devrim Horlu</strong> tarafından <strong>Şubat 2024’te Kadıköy’de</strong> kuruldu. Raflara kitap, masalara kahve ve bolca edebiyat sohbeti ekleyerek yolumuza devam ediyoruz.
         </p>
         <p class="about-text">
-          Buraya kahve içmeye, kitap bakmaya ya da biraz oyalanmaya gelebilirsiniz. <strong style="color:#ffffff;">Muhtelif Kitap</strong> ve <strong style="color:#ffffff;">Başka Kitap</strong> yayınlarımızı doğrudan raflarımızdan alabilirsiniz.
+          Buraya kahve içmeye, kitap bakmaya ya da biraz oyalanmaya gelebilirsiniz. <strong>Muhtelif Kitap</strong> ve <strong>Başka Kitap</strong> yayınlarımızı doğrudan raflarımızdan alabilirsiniz.
         </p>
       </div>
 
-      <!-- Right Column: Dosya Başvurusu -->
+      <!-- Right Column: Dosya Başvurusu & İletişim -->
       <div>
         <div class="about-col-title">
           <span>✍️</span> YAZARLAR İÇİN DOSYA BAŞVURUSU
@@ -550,28 +553,24 @@
           Bir romanınız, öyküleriniz ya da yayımlanmasını istediğiniz bir dosyanız varsa <strong>Başka Kitap</strong>’a gönderebilirsiniz. Dosyanızı okur, değerlendirir; yayın sürecini birlikte konuşuruz.
         </p>
         <div class="submission-box">
-          <div style="font-size: 8.5px; color: #dfa84b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;">
-            BAŞVURU E-POSTA ADRESİ:
-          </div>
-          <div class="email-line">
-            dosyabasvurubaska@gmail.com
-          </div>
+          <div style="font-size: 8.5px; color: #dfa84b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Başvuru E-Posta Adresi:</div>
+          <div class="email-line">dosyabasvurubaska@gmail.com</div>
         </div>
       </div>
     </div>
-
+    
     <div class="tagline">
       “Kısacası kahveniz için de biz buradayız, bir sonraki kitabınız için de.”
     </div>
   </div>
 
-  <!-- Centered Footer -->
+  <!-- Footer -->
   <div class="footer">
     <div class="wifi-badge">
-      📶 Wi-Fi: Black Books Misafir &bull; Şifre: bandini24
+      📶 Wi-Fi: Black Books Misafir • Şifre: bandini24
     </div>
     <div class="location-info">
-      Caferağa Mah. Moda, Kadıköy / İstanbul &bull; <span>Burak Albayrak &amp; Devrim Horlu &bull; Black Books &amp; Coffee</span>
+      Caferağa Mah. Moda, Kadıköy / İstanbul • <span>Burak Albayrak &amp; Devrim Horlu</span> • <span>Black Books &amp; Coffee</span>
     </div>
   </div>
 
