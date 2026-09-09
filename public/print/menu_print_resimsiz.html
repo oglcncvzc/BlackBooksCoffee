@@ -27,7 +27,7 @@
       overflow: hidden;
     }
     body {
-      padding: 6mm 8.5mm 5mm;
+      padding: 6mm 8.5mm 5.5mm;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -57,7 +57,7 @@
 
     /* Header */
     .header {
-      padding-bottom: 4px;
+      padding-bottom: 5px;
       border-bottom: 1px solid rgba(212, 175, 122, 0.25);
       position: relative;
       z-index: 10;
@@ -70,17 +70,17 @@
     .header-left {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       text-align: left;
     }
     .logo-container {
-      width: 42px;
-      height: 42px;
-      border-radius: 8px;
+      width: 46px;
+      height: 46px;
+      border-radius: 9px;
       overflow: hidden;
-      border: 1.2px solid #dfa84b;
+      border: 1.5px solid #dfa84b;
       background: #000;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.8);
       flex-shrink: 0;
     }
     .logo-container img {
@@ -90,24 +90,24 @@
     }
     .title {
       font-family: 'Cinzel', serif;
-      font-size: 17.5px;
+      font-size: 19px;
       font-weight: 700;
       letter-spacing: 0.1em;
       color: #ffffff;
       line-height: 1.1;
     }
     .subtitle {
-      font-size: 9px;
+      font-size: 9.5px;
       font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #dfa84b;
-      margin-top: 1px;
+      margin-top: 2px;
     }
     .motto {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 12px;
+      font-size: 13px;
       color: #ece3d4;
       opacity: 0.95;
       text-align: right;
@@ -117,33 +117,33 @@
     .menu-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 16px;
       position: relative;
       z-index: 10;
-      margin-top: 4px;
+      margin-top: 5px;
     }
 
     .section-title {
       font-family: 'Cinzel', serif;
-      font-size: 10.5px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.08em;
       color: #dfa84b;
       border-bottom: 1px solid rgba(223, 168, 75, 0.4);
       padding-bottom: 2px;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
     }
 
     .category-block {
-      margin-bottom: 3.5px;
+      margin-bottom: 6px;
     }
 
     /* Menu Item Row */
     .menu-item {
-      margin-bottom: 2px;
+      margin-bottom: 3.5px;
     }
     .item-header {
       display: flex;
@@ -152,7 +152,7 @@
     }
     .item-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 13.5px;
+      font-size: 15px;
       font-weight: 700;
       color: #ffffff;
       white-space: nowrap;
@@ -160,48 +160,49 @@
     .item-dots {
       flex: 1;
       border-bottom: 1px dotted rgba(212, 175, 122, 0.35);
-      margin: 0 4px;
+      margin: 0 5px;
       position: relative;
       top: -3px;
     }
     .item-price {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       color: #f3c978;
       white-space: nowrap;
     }
     .item-desc {
-      font-size: 7.8px;
+      font-size: 8.5px;
       color: #aba296;
-      line-height: 1.1;
+      line-height: 1.15;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      margin-top: 1px;
     }
 
     /* =========================================
        EXPANDED ABOUT & FULL STORY SECTION
        ========================================= */
     .about-banner {
-      background: linear-gradient(135deg, rgba(42, 27, 17, 0.85) 0%, rgba(18, 12, 8, 0.95) 100%);
+      background: linear-gradient(135deg, rgba(42, 27, 17, 0.9) 0%, rgba(18, 12, 8, 0.96) 100%);
       border: 1.2px solid rgba(223, 168, 75, 0.4);
-      border-radius: 6px;
-      padding: 6px 10px 5px;
+      border-radius: 7px;
+      padding: 7px 12px 6px;
       position: relative;
       z-index: 10;
       margin-top: 3px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.55);
     }
     .about-grid {
       display: grid;
-      grid-template-columns: 1.18fr 0.82fr;
-      gap: 10px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 12px;
       align-items: start;
     }
     .about-col-title {
       font-family: 'Cinzel', serif;
-      font-size: 10.5px;
+      font-size: 11.5px;
       font-weight: 700;
       color: #dfa84b;
       margin-bottom: 3px;
@@ -212,7 +213,7 @@
       padding-bottom: 2px;
     }
     .about-text {
-      font-size: 8.5px;
+      font-size: 9.2px;
       color: #e2d7c5;
       line-height: 1.4;
       margin-bottom: 3px;
@@ -234,12 +235,12 @@
     }
     .email-line {
       font-family: monospace;
-      font-size: 9.5px;
+      font-size: 10.5px;
       font-weight: 700;
       color: #f3c978;
       margin-top: 2px;
-      background: rgba(223, 168, 75, 0.12);
-      padding: 2px 6px;
+      background: rgba(223, 168, 75, 0.15);
+      padding: 2px 8px;
       border-radius: 3px;
       display: inline-block;
     }
@@ -247,7 +248,7 @@
       text-align: center;
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 11px;
+      font-size: 12px;
       color: #ece3d4;
       margin-top: 4px;
       border-top: 1px solid rgba(212, 175, 122, 0.2);
@@ -258,12 +259,12 @@
     .footer {
       border-top: 1px solid rgba(212, 175, 122, 0.25);
       padding-top: 5px;
-      padding-bottom: 2px;
+      padding-bottom: 1px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justifyContent: center;
-      gap: 4px;
+      gap: 3px;
       text-align: center;
       position: relative;
       z-index: 10;
@@ -271,18 +272,18 @@
     .wifi-badge {
       background: rgba(223, 168, 75, 0.15);
       border: 1px solid rgba(223, 168, 75, 0.4);
-      padding: 2.5px 16px;
+      padding: 3px 20px;
       border-radius: 14px;
-      font-size: 9.5px;
+      font-size: 10px;
       font-weight: 600;
       color: #f3c978;
       display: inline-flex;
       align-items: center;
       justifyContent: center;
-      gap: 4px;
+      gap: 5px;
     }
     .location-info {
-      font-size: 8.8px;
+      font-size: 9.2px;
       color: #aba296;
       line-height: 1.2;
       text-align: center;
@@ -314,10 +315,10 @@
     </div>
   </div>
 
-  <!-- Menu Grid -->
+  <!-- Menu Grid (Real 19 Menu Items) -->
   <div class="menu-grid">
     
-    <!-- LEFT COLUMN: SICAK KAHVELER -->
+    <!-- LEFT COLUMN: SICAK KAHVELER (10 Items) -->
     <div>
       <div class="category-block">
         <div class="section-title">☕ SICAK KAHVELER</div>
@@ -360,106 +361,61 @@
 
         <div class="menu-item">
           <div class="item-header">
-            <span class="item-name">Cortado</span>
+            <span class="item-name">Caffè Crema</span>
             <span class="item-dots"></span>
             <span class="item-price">200₺</span>
           </div>
-          <div class="item-desc">Eşit oranda espresso ve kadifemsi sıcak süt.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Flat White</span>
-            <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
-          </div>
-          <div class="item-desc">Double shot espresso ve mikro köpüklü süt.</div>
+          <div class="item-desc">Yumuşak içimli kremalı kahve.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
             <span class="item-name">Cappuccino</span>
             <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
+            <span class="item-price">250₺</span>
           </div>
-          <div class="item-desc">Yoğun süt köpüğü ve dengeli espresso lezzeti.</div>
+          <div class="item-desc">Taze espresso, sıcak süt ve kadifemsi köpük.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
             <span class="item-name">Caffè Latte</span>
             <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
+            <span class="item-price">250₺</span>
           </div>
-          <div class="item-desc">Yumuşak içimli buharda süt ve espresso.</div>
+          <div class="item-desc">Buharda ısıtılmış süt ve taze espresso.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
-            <span class="item-name">Mocha</span>
-            <span class="item-dots"></span>
-            <span class="item-price">220₺</span>
-          </div>
-          <div class="item-desc">Espresso, sıcak süt ve kaliteli çikolata sosu.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">White Mocha</span>
-            <span class="item-dots"></span>
-            <span class="item-price">220₺</span>
-          </div>
-          <div class="item-desc">Beyaz çikolata, espresso ve kadifemsi süt.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Filtre Kahve</span>
-            <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
-          </div>
-          <div class="item-desc">Günün taze demlenmiş nitelikli filtre kahvesi.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">V60 Pour Over</span>
+            <span class="item-name">Latte Macchiato</span>
             <span class="item-dots"></span>
             <span class="item-price">250₺</span>
           </div>
-          <div class="item-desc">El yapımı özel pour-over demleme.</div>
+          <div class="item-desc">Katmanlı sıcak süt, süt köpüğü ve espresso.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
-            <span class="item-name">Chemex (2 Kişilik)</span>
-            <span class="item-dots"></span>
-            <span class="item-price">500₺</span>
-          </div>
-          <div class="item-desc">Kalın filtreyle berrak gövdeli paylaşım.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Aeropress</span>
+            <span class="item-name">Flat White</span>
             <span class="item-dots"></span>
             <span class="item-price">250₺</span>
           </div>
-          <div class="item-desc">Hava basıncıyla demlenen yoğun kahve.</div>
+          <div class="item-desc">Çift shot espresso ve mikro köpüklü süt.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
             <span class="item-name">Türk Kahvesi</span>
             <span class="item-dots"></span>
-            <span class="item-price">Single 100₺ / Double 200₺</span>
+            <span class="item-price">150₺</span>
           </div>
-          <div class="item-desc">Geleneksel taze çekim Türk kahvesi.</div>
+          <div class="item-desc">Bol köpüklü taze çekim Türk kahvesi.</div>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT COLUMN: SOĞUK KAHVELER, ÇAYLAR, SOĞUK İÇECEKLER -->
+    <!-- RIGHT COLUMN: SOĞUK KAHVELER, ÇAYLAR, SOĞUK ÇAYLAR, SOĞUK İÇECEKLER (9 Items) -->
     <div>
       <!-- SOĞUK KAHVELER -->
       <div class="category-block">
@@ -471,61 +427,16 @@
             <span class="item-dots"></span>
             <span class="item-price">200₺</span>
           </div>
-          <div class="item-desc">Buzlu su üzerine double espresso çekimi.</div>
+          <div class="item-desc">Soğuk su ve buz ile taze double espresso.</div>
         </div>
 
         <div class="menu-item">
           <div class="item-header">
             <span class="item-name">Iced Latte</span>
             <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
-          </div>
-          <div class="item-desc">Soğuk süt, bol buz ve taze espresso.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Iced Mocha</span>
-            <span class="item-dots"></span>
-            <span class="item-price">220₺</span>
-          </div>
-          <div class="item-desc">Çikolata sosu, soğuk süt, espresso ve buz.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Iced White Mocha</span>
-            <span class="item-dots"></span>
-            <span class="item-price">220₺</span>
-          </div>
-          <div class="item-desc">Beyaz çikolata lezzetiyle ferahlatıcı kahve.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Iced Filtre Kahve</span>
-            <span class="item-dots"></span>
-            <span class="item-price">200₺</span>
-          </div>
-          <div class="item-desc">Soğutulmuş taze nitelikli filtre kahve.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Cold Brew</span>
-            <span class="item-dots"></span>
             <span class="item-price">250₺</span>
           </div>
-          <div class="item-desc">16 saat soğuk damıtılmış nitelikli kahve.</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="item-header">
-            <span class="item-name">Iced V60</span>
-            <span class="item-dots"></span>
-            <span class="item-price">250₺</span>
-          </div>
-          <div class="item-desc">Buz üzerine el ile taze demlenen pour-over.</div>
+          <div class="item-desc">Buzlu soğuk süt ve taze espresso.</div>
         </div>
 
         <div class="menu-item">
@@ -538,86 +449,74 @@
         </div>
       </div>
 
-      <!-- ÇAYLAR & SOĞUK ÇAYLAR & SOĞUK İÇECEKLER -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-        <div>
-          <!-- ÇAYLAR -->
-          <div class="category-block">
-            <div class="section-title">🫖 ÇAYLAR</div>
+      <!-- ÇAYLAR -->
+      <div class="category-block">
+        <div class="section-title">🫖 SICAK ÇAYLAR</div>
 
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Siyah Çay</span>
-                <span class="item-dots"></span>
-                <span class="item-price">50₺/75₺</span>
-              </div>
-              <div class="item-desc">Taze demlenmiş çay.</div>
-            </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Demleme Siyah Çay</span>
+            <span class="item-dots"></span>
+            <span class="item-price">Bardak 50₺ / Kupa 75₺</span>
+          </div>
+          <div class="item-desc">Taze demlenmiş klasik siyah çay.</div>
+        </div>
 
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Yeşil Çay</span>
-                <span class="item-dots"></span>
-                <span class="item-price">75₺</span>
-              </div>
-              <div class="item-desc">Yaprak yeşil çay.</div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Yeşil Çay</span>
+            <span class="item-dots"></span>
+            <span class="item-price">75₺</span>
+          </div>
+          <div class="item-desc">Taze demlenmiş yaprak yeşil çay.</div>
+        </div>
+      </div>
+
+      <!-- SOĞUK ÇAYLAR & SOĞUK İÇECEKLER (YAN YANA) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <!-- SOĞUK ÇAYLAR -->
+        <div class="category-block" style="margin-bottom: 0;">
+          <div class="section-title">🍑 SOĞUK ÇAYLAR</div>
+
+          <div class="menu-item">
+            <div class="item-header">
+              <span class="item-name" style="font-size: 14px;">Şeftali &amp; Çarkıf.</span>
+              <span class="item-dots"></span>
+              <span class="item-price">100₺</span>
             </div>
+            <div class="item-desc">Soğuk meyve çayı.</div>
           </div>
 
-          <!-- SOĞUK İÇECEKLER -->
-          <div class="category-block">
-            <div class="section-title">💧 SOĞUK</div>
-
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Soda</span>
-                <span class="item-dots"></span>
-                <span class="item-price">75₺</span>
-              </div>
-              <div class="item-desc">Maden suyu.</div>
+          <div class="menu-item">
+            <div class="item-header">
+              <span class="item-name" style="font-size: 14px;">Çilek &amp; Portakal</span>
+              <span class="item-dots"></span>
+              <span class="item-price">100₺</span>
             </div>
-
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Doğal Su</span>
-                <span class="item-dots"></span>
-                <span class="item-price">30₺</span>
-              </div>
-              <div class="item-desc">Kaynak suyu.</div>
-            </div>
+            <div class="item-desc">Soğuk aromatik çay.</div>
           </div>
         </div>
 
-        <div>
-          <!-- SOĞUK ÇAYLAR -->
-          <div class="category-block">
-            <div class="section-title">🍑 SOĞUK ÇAYLAR</div>
+        <!-- SOĞUK İÇECEKLER -->
+        <div class="category-block" style="margin-bottom: 0;">
+          <div class="section-title">💧 SOĞUK İÇECEKLER</div>
 
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Şeftali &amp; Çarkıf.</span>
-                <span class="item-dots"></span>
-                <span class="item-price">100₺</span>
-              </div>
-              <div class="item-desc">Soğuk demlenmiş meyve çayı.</div>
+          <div class="menu-item">
+            <div class="item-header">
+              <span class="item-name">Soda (Maden Suyu)</span>
+              <span class="item-dots"></span>
+              <span class="item-price">75₺</span>
             </div>
-
-            <div class="menu-item">
-              <div class="item-header">
-                <span class="item-name">Çilek &amp; Portakal</span>
-                <span class="item-dots"></span>
-                <span class="item-price">100₺</span>
-              </div>
-              <div class="item-desc">Soğuk aromatik çay.</div>
-            </div>
+            <div class="item-desc">Zengin mineralli soda.</div>
           </div>
 
-          <!-- SAHAF & NADİR KİTAP -->
-          <div class="category-block">
-            <div class="section-title">📚 SAHAF SEÇKİSİ</div>
-            <div style="font-size: 8px; color: #d4c3a3; line-height: 1.25; background: rgba(26,23,19,0.45); border: 1px solid rgba(212,175,122,0.12); border-radius: 4px; padding: 4px 6px;">
-              İmzalı &amp; ilk baskı kitaplar raflarımızda ve <strong style="color:#dfa84b;">NadirKitap</strong> dükkanımızda!
+          <div class="menu-item">
+            <div class="item-header">
+              <span class="item-name">Doğal Kaynak Suyu</span>
+              <span class="item-dots"></span>
+              <span class="item-price">30₺</span>
             </div>
+            <div class="item-desc">Soğuk kaynak suyu.</div>
           </div>
         </div>
       </div>
@@ -651,7 +550,7 @@
           Bir romanınız, öyküleriniz ya da yayımlanmasını istediğiniz bir dosyanız varsa <strong>Başka Kitap</strong>’a gönderebilirsiniz. Dosyanızı okur, değerlendirir; yayın sürecini birlikte konuşuruz.
         </p>
         <div class="submission-box">
-          <div style="font-size: 7.8px; color: #dfa84b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;">
+          <div style="font-size: 8.2px; color: #dfa84b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;">
             BAŞVURU E-POSTA ADRESİ:
           </div>
           <div class="email-line">
