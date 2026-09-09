@@ -256,9 +256,12 @@ export const CAFE_INFO = {
   yandexMaps: 'https://yandex.com.tr/maps/org/black_books_coffee/172021976894/',
   wifi: {
     name: 'Black Books Misafir',
-    pass: 'Bandini24',
+    pass: 'bandini24',
   },
-  founders: 'Burak',
+  founders: 'Burak Albayrak & Devrim Horlu',
+  established: 'Şubat 2024',
+  submissionEmail: 'dosyabasvurubaska@gmail.com',
+  publishers: ['Muhtelif Kitap', 'Başka Kitap'],
   address: 'Caferağa Mah. Moda, Kadıköy / İstanbul',
   tags: ['Boutique Coffee', 'Nadir & İkinci El Kitap', 'Edebiyat Kulübü', 'Sıcak Atmosfer'],
 };

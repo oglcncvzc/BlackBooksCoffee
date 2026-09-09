@@ -189,8 +189,12 @@ export const Footer: React.FC = () => {
           fontSize: '12px',
           color: 'var(--text-subtle)',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
-            <span>Burak</span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <span style={{ color: 'var(--accent-gold-light)', fontWeight: 500 }}>{CAFE_INFO.founders}</span>
+            <span>•</span>
+            <a href="#hakkimizda" style={{ color: 'var(--accent-paper)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+              Hakkımızda &amp; Hikâyemiz
+            </a>
             <span>•</span>
             <span style={{ color: 'var(--accent-gold)' }}>Kadıköy / Moda</span>
           </div>

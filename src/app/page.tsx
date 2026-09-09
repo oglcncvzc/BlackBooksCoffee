@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero';
 import { CategoryNav } from '@/components/CategoryNav';
 import { MenuItemCard } from '@/components/MenuItemCard';
 import { SahafBanner } from '@/components/SahafBanner';
+import { AboutSection } from '@/components/AboutSection';
 import { OrderTray, OrderItem } from '@/components/OrderTray';
 import { Footer } from '@/components/Footer';
 import { MENU_ITEMS, CATEGORIES, MenuItem } from '@/data/menu';
@@ -252,6 +253,9 @@ export default function HomePage() {
             );
           })
         )}
+
+        {/* About Us / Biz Kimiz Story & Dosya Başvurusu */}
+        <AboutSection />
 
         {/* Sahaf / NadirKitap Spotlight */}
         <SahafBanner />

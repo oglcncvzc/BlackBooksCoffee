@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Search, Sparkles } from 'lucide-react';
+import { Search, Sparkles, BookOpen } from 'lucide-react';
 import { CAFE_INFO } from '@/data/menu';
 
 interface HeroProps {
@@ -60,12 +60,13 @@ export const Hero: React.FC<HeroProps> = ({
           <span>Sahaf &amp; Butik Kahve • Moda</span>
         </div>
 
-        {/* Official Logo Showcase */}
+        {/* Official Logo Showcase with Hakkımızda Button */}
         <div style={{
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
-          marginBottom: '16px',
+          gap: '12px',
+          marginBottom: '18px',
         }}>
           <div style={{
             width: '90px',
@@ -86,6 +87,30 @@ export const Hero: React.FC<HeroProps> = ({
               priority
             />
           </div>
+
+          {/* Hakkımızda Button Under Logo */}
+          <a
+            href="#hakkimizda"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '7px 20px',
+              borderRadius: 'var(--radius-full)',
+              background: 'rgba(28, 22, 16, 0.85)',
+              border: '1px solid rgba(212, 175, 122, 0.35)',
+              color: '#fbf9f5',
+              fontSize: '13px',
+              fontWeight: 600,
+              textDecoration: 'none',
+              letterSpacing: '0.02em',
+              boxShadow: '0 4px 14px rgba(0,0,0,0.5)',
+              transition: 'all 0.25s ease',
+            }}
+          >
+            <BookOpen size={14} color="var(--accent-gold)" />
+            <span>Hakkımızda</span>
+          </a>
         </div>
 
         {/* Main Title */}
